@@ -1,0 +1,44 @@
+.about{
+    
+    background-color: var(--fondoabout);
+
+    height: 50vh;
+    color:var(--psections);
+    display: flex;
+    /* text-align: start; */
+    /* padding: 10px 20px; */
+    padding-bottom: 90px;
+    /* justify-content: space-evenly; */
+}
+.about img{
+    margin: 83px 39px 0 177px;
+}
+
+.texto-about{
+    margin: 85px 177px 0 200px;
+    text-align: end;
+}
+.texto-about sup{
+    font-size: 35px;
+
+}
+.cv_descarga{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.cv_descarga i{
+    padding-top: 10px;
+}
+.Descar{
+    padding-top: 10px;
+    
+}
+
+.ga_cv{
+    background-color:var(--fondos_marrones);
+    padding: 10px 10px 10px 0;
+}
