@@ -13,13 +13,13 @@ Esta es la segunda ocasión en la que hago una pagina portfolio de ese diseño, 
 
 <h3>Por ultimo dejo una recuento de las tecnologias utilizadas</h3>
 <ul>
-    <li><react para crear componentes</p></li>
+    <li><p>react para crear componentes</p></li>
     <li><p>chakra ui para estilar </p></li>
     <li>Luego muchos paquetes de js que me permitieron darle el toque final  a la pagina</li>
 </ul>
 
 <h4>mira una imagen del portafolio en el que me base</h4>
-<img src="img/portfolio_a-replicar.png" alt="portfolio behance">
+<img src="https://github.com/ybamBogado/portfolio-web/blob/main/img/portfolio_a-replicar.png?raw=true)">
 
 <h2>problemas</h2>
 
