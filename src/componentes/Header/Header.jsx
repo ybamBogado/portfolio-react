@@ -11,14 +11,15 @@ export const Header = () => {
       justify={"space-between"}
       
       bg="#212121"
-      pr={{base:"30",lg:"40",xl:"44"}} 
-      pl={{base:"30",lg:"40",xl:"44"}}
-      pt={{base:"1",xl:"3",lg:"4"}}       
+      pr={{base:"10",md:"20",lg:"40",xl:"44"}} 
+      pl={{base:"20",md:"20",lg:"40",xl:"44"}}
+      pt={{base:"1",md:2,lg:"3"}}       
       flexDirection={{base:"column",lg:"row"}}
       >
       <Box color="white" 
-      fontSize={{base:20,lg:50}}
+      fontSize={{base:20,md:30,lg:50}}
       fontFamily={logo}
+      textAlign="center"
       >
         IB
       </Box>

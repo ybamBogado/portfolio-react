@@ -1,4 +1,4 @@
-import { Flex,Link, textDecoration } from "@chakra-ui/react"
+import { Center, Flex,Link, textDecoration } from "@chakra-ui/react"
 
 
 
@@ -7,10 +7,12 @@ function NavBar() {
         <Flex
         as="nav" 
         ml={{base:"25",xl:"30",lg:"35"}} 
-        
         color="#d1d1d0"
-        fontSize={{base:"40",lg:"20"}}>
-            <Link as={"a"} href="#inicio" mr={8}
+        fontSize={{base:15,md:20, lg:22}}
+        flexDirection={{base:"column",md:"row"}}
+        textAlign={"Center"}>
+            <Link as={"a"} href="#inicio" 
+            mr={{base:0,md:4,lg:8}}
             textDecoration={"none"}
             position={"relative"}
             _hover={{_after:{
@@ -26,7 +28,8 @@ function NavBar() {
             >
                     Inicio
             </Link>
-            <Link href="#sobre" mr={8}
+            <Link href="#sobre" 
+            mr={{base:0,md:4,lg:8}}
             position={"relative"} 
             _hover={{_after:{ 
                 content: '"•"',position: "absolute", 
@@ -37,7 +40,8 @@ function NavBar() {
                 >
                 Sobre
             </Link>
-            <Link href="#portfolio" mr={8} 
+            <Link href="#portfolio" 
+            mr={{base:0,md:4,lg:8}}
             position={"relative"} 
             _hover={{_after:{ 
                 content: '"•"',position: "absolute", 
@@ -48,7 +52,8 @@ function NavBar() {
             >
                 Portfolio
             </Link>
-            <Link href="#servicios" mr={8} 
+            <Link href="#servicios" 
+            mr={{base:0,md:4,lg:8}}
             position={"relative"} 
             _hover={{_after:{ 
                 content: '"•"',position: "absolute", 

@@ -3,6 +3,8 @@ import { BoutMe } from '../BoutMe/BoutMe'
 import { Work } from '../Work/Work'
 import { Together } from '../Together/Together'
 import { Services } from '../Services/Services'
+import "@fontsource-variable/anek-devanagari"
+import { Box } from '@chakra-ui/react'
 
 let Main=()=>{
     const imagenes={
@@ -14,14 +16,18 @@ let Main=()=>{
         "img_Diseno":"https://raw.githubusercontent.com/ybamBogado/portfolio-web/main/img/servicios_1.jpeg",
         "img_Creacion":"https://raw.githubusercontent.com/ybamBogado/portfolio-web/main/img/servicios_2.jpeg",
         "img_Together":"https://raw.githubusercontent.com/ybamBogado/portfolio-web/main/img/trabajemos_juntos.jpeg",
+        "fuente":"'Anek Devanagari', sans-serif, serif"
     }
     return(
         <main>
-            <Hero imgh={imagenes.img_hero}/>
-            <BoutMe imgBm={imagenes.img_about}/>
-            <Work imgW1={imagenes.img_inicio_sesion} imgW2={imagenes.img_landing} imgW3={imagenes.img_python}/>
-            <Services imgS1={imagenes.img_Diseno} imgS2={imagenes.img_Creacion}/>
-            <Together imgT={imagenes.img_Together}/>
+            <Box fontfamily={imagenes.fuente}>
+                <Hero imgh={imagenes.img_hero}/>
+                <BoutMe imgBm={imagenes.img_about}/>
+                <Work imgW1={imagenes.img_inicio_sesion} imgW2={imagenes.img_landing} imgW3={imagenes.img_python}/>
+                <Services imgS1={imagenes.img_Diseno} imgS2={imagenes.img_Creacion}/>
+                <Together imgT={imagenes.img_Together}/>
+            </Box>
+            
         </main>
     )
 }

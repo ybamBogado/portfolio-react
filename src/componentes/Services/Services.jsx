@@ -9,7 +9,9 @@ let Services=({imgS1,imgS2})=>{
         texto:"#d1d1d0"
     }
     return(
-    <Box bg={colores_S.fondo} 
+    <Box 
+    id='servicios'
+    bg={colores_S.fondo} 
     color={colores_S.texto}
     pl={{base:44}} 
     pr={{base:44}} 

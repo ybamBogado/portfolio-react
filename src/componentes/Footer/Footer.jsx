@@ -16,8 +16,12 @@ let Footer=()=>{
         flexDirection={'row'}
         bg={colores_f.fondo}
         color={colores_f.texto}
-        p={{base:"100px 177px"}}
+        pl={{base:"10",md:"20",lg:"40",xl:"44"}} 
+        pr={{base:"10",md:"20",lg:"40",xl:"44"}}
+        pt={{base:5,md:10,lg:20}}
+        pb={{base:5,md:10,lg:20}}
         alignContent={'space-between'}
+        flexDirection={{base:"column",lg:"row"}}
         >
             <link rel="preconnect" href="https://fonts.googleapis.com"></link>
             <Text>
@@ -26,21 +30,23 @@ let Footer=()=>{
                 >IB</Text>
             Comprometido a sorprender superando espectativas. Me especializo en crear experiencia web para el usuario. Explora mi portfolio para sorprenderte con mi implementación de ideas a la realidad. Te invito a una nueva experiencia de usuario.
             </Text>
-            <Box as='div' border={"2px solid"} borderStyle={"none none none solid"}
+            <Box as='div' border={"2px solid"} borderStyle={{base:"solid none none none",lg:"none none none solid"}}
             pl={{base:"60px"}}
             pr={{base:"10px"}}
-            textAlign={'end'}>
+            textAlign={{base:"center",lg:"end"}}
+            
+            >
                 <Text as={"h1"}
                 fontWeight='bold'
-                justifyContent="end"
+                
                 >
                 Contacto
                 </Text>
                 <Text>Direccion: Argentina</Text>
                 <Text>Mail:bogadoivan52@gmail.com</Text>
                 <Flex
-                justifyContent="flex-end"
-                flexDirection={"row"}>
+                justifyContent={{base:"center",lg:"flex-end"}}
+                flexDirection={{base:"column",lg:"row"}}>
                     <Link href='http://t.me/ybamsas'>
                         <Icon as={LiaTelegramPlane}
                         w={{base:6}} h={{base:6}}></Icon>

@@ -9,20 +9,28 @@ let Work=({imgW1,imgW2,imgW3})=>{
         texto:"#d1d1d0"
     }
     return(
-        <Flex bg={colores_W.fondo} color={colores_W.texto}
-        pt={{base:20}} 
-        pb={{base:20}}>
+        <Flex 
+        id='portfolio'
+        bg={colores_W.fondo} color={colores_W.texto}
+        pt={{base:10,md:20}} 
+        pb={{base:10,md:20}}
+        flexDirection={{base:"column",lg:"row"}}
+        justifyItems={{base:"center"}}
+        alignItems={{base:"center"}}>
             <Box
             pt={{base:20}} 
-            pr={{base:60}}
-            pl={{base:44}}
+            pr={{base:20,md:60}}
+            pl={{base:10,md:44}}
             >
                 <Text as="sup">Mi</Text>
                 <Text as={"h1"}>Trabajo</Text>
                 <FlechaL texto1="Ver" texto2=" Más" enlace="https://github.com/ybamBogado?tab=repositories"/>
             </Box>
-            <Flex>
-                <Box as='flex'>
+            <Flex pt={{base:2}}
+            flexDirection={{base:"column",lg:"row"}}
+            >
+                <Box as='flex' 
+                flexDirection={{base:"column",lg:"row"}}>
                     <Box mr={8} mb={8}>
                         <MyWork img={imgW1} servicio="Diseño de página" detalle="inicio de sesion" link="https://ybambogado.github.io/image-based-web-project/pages/tripy.html"/>
                     </Box>
