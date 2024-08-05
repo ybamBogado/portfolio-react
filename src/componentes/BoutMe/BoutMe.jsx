@@ -9,17 +9,38 @@ let BoutMe=({imgBm})=>{
     }
 
     return(
-        <Flex bg={colores_bm.fondo} color={colores_bm.texto}>
+        <Flex bg={colores_bm.fondo} 
+        color={colores_bm.texto}
+        fontSize={{base:"40",lg:"20"}}
+        pl={{base:44}} 
+        pr={{base:44}} 
+        pt={{base:20}}
+        pb={{base:20}}
+        >
             <Image src={imgBm} 
-            mt="95px" ml="177px" mb="80px" mr="50px" 
-            w={"17%"}></Image>
-            <Box>
-                <Text as="sup">Sobre</Text>
-                <Text as={"h1"}>Mi</Text>
-                <Text>
+            pt={{base:10, lg:15}}
+            pr={{base:44}}
+            w={{base:"50%"}}
+            display={{base:"none", lg:"inline"}}></Image>
+            <Box
+            textAlign="end">
+                <Text
+                fontSize={{base:20,lg:30}}
+                textTransform='uppercase'
+                >Sobre</Text>
+                <Text as="h1"
+                fontWeight='bold'
+                fontSize={{base:22,lg:32}}
+                >Mi</Text>
+                <Text as="p"
+                fontSize={{base:10, lg:15}}>
                     Hola! Soy Iván Bogado, programador web full stack. Tengo bastantes proyectos que puedes visitar. Sobresalgo por el conocimiento que tengo sobre distintos campos. Mis habilidades incluyen Python, C#, MySQL, HTML y CSS
                 </Text>
-                <FlechasR texto1="Descar" texto2="ga cv" enlace="https://drive.usercontent.google.com/u/1/uc?id=1I3J6AwZ10S4nL3eq5dRT7mXm0o-L0BMN&export=download" />
+                <Box
+                pt={{base:40}}>
+                    <FlechasR texto1="DESCAR" texto2="GA CV" enlace="https://drive.usercontent.google.com/u/1/uc?id=1I3J6AwZ10S4nL3eq5dRT7mXm0o-L0BMN&export=download" />
+                </Box>
+                
             </Box>
         </Flex>
     )

@@ -6,10 +6,11 @@ function NavBar() {
     return(
         <Flex
         as="nav" 
-        ml="100px" 
-        pr="155px"
-        color="#d1d1d0">
-            <Link as={"a"} href="#inicio" mr={4}
+        ml={{base:"25",xl:"30",lg:"35"}} 
+        
+        color="#d1d1d0"
+        fontSize={{base:"40",lg:"20"}}>
+            <Link as={"a"} href="#inicio" mr={8}
             textDecoration={"none"}
             position={"relative"}
             _hover={{_after:{
@@ -25,7 +26,7 @@ function NavBar() {
             >
                     Inicio
             </Link>
-            <Link href="#sobre" mr={4}
+            <Link href="#sobre" mr={8}
             position={"relative"} 
             _hover={{_after:{ 
                 content: '"•"',position: "absolute", 
@@ -36,7 +37,7 @@ function NavBar() {
                 >
                 Sobre
             </Link>
-            <Link href="#portfolio" mr={4} 
+            <Link href="#portfolio" mr={8} 
             position={"relative"} 
             _hover={{_after:{ 
                 content: '"•"',position: "absolute", 
@@ -47,7 +48,7 @@ function NavBar() {
             >
                 Portfolio
             </Link>
-            <Link href="#servicios" mr={4} 
+            <Link href="#servicios" mr={8} 
             position={"relative"} 
             _hover={{_after:{ 
                 content: '"•"',position: "absolute", 

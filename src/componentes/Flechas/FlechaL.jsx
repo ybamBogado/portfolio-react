@@ -1,5 +1,6 @@
-import { ArrowForwardIcon } from "@chakra-ui/icons"
-import { Box, Flex, Link } from "@chakra-ui/react"
+
+import { Box, Flex, Icon, Link } from "@chakra-ui/react"
+import { CgArrowLongRight } from "react-icons/cg";
 
 let FlechaL=({texto1,texto2,enlace})=>{
     const colores={
@@ -9,14 +10,22 @@ let FlechaL=({texto1,texto2,enlace})=>{
     }
     return(
         <Flex cursor={"pointer"} alignItems={"center"}
-        color={colores.texto}>
+        color={colores.texto}
+        mt={{base:8}}
+        mb={{base:2}}>
             <Link href={enlace}
             _hover={{textDecoration:"none", color:"white"}}>
-                <Box bg={colores.marron} as={"a"} href={enlace}>
+                <Box bg={colores.marron} as={"a"} href={enlace}
+                pt={{base:4}}
+                pb={{base:4}}
+                pl={{base:4}}>
                     {texto1}
             </Box>
             {texto2}
-            <ArrowForwardIcon/>
+            <Icon as={CgArrowLongRight} w={6} h={2}  
+            transform="scaleX(10)" 
+            ml={10}></Icon>
+            
             </Link>
             
         </Flex>
@@ -24,29 +33,3 @@ let FlechaL=({texto1,texto2,enlace})=>{
 }
 
 export {FlechaL}
-// .contratame{
-//     display: flex;
-//     justify-items: start;
-//     align-items: center;
-//     flex-direction: row;
-//     padding-top: 10px;
-//     width: 50%;
-//     cursor:pointer;
-// }
-
-// .fondo_contrateme{
-//     background-color:var(--fondos_marrones);
-//     padding: 20px 0px 20px 10px;
-// }
-// .me{
-//     padding-top: 20px;
-//     padding-bottom: 20px;
-// }
-// .contratame i{
-//     /* padding-top: 10px;
-//     padding-bottom: 10px; */
-//     padding-left: 20px;
-//     padding-right: 10px;
-//     /* transform: scale(20,-11); Esto duplicará el ancho del icono */
-//     transform: scaleX(5);
-// }

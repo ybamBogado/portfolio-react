@@ -1,5 +1,5 @@
-import { Box, Flex, Link, Text, textDecoration } from "@chakra-ui/react"
-
+import { Box, Flex, Icon, Link, Text } from "@chakra-ui/react"
+import { CgArrowRightO } from "react-icons/cg"
 let MyWork=({img,servicio,detalle, link, })=>{
 
     return(
@@ -15,10 +15,20 @@ let MyWork=({img,servicio,detalle, link, })=>{
                 _hover={{textDecoration:"none",
                     color:"white"
                 }}
-                
                 >
-                    <Text opacity={1} pl={{base:2}}>•{servicio}</Text>
-                    <Text opacity={1} pl={{base:2}}>{detalle}</Text>
+                    <Flex>
+                        <Box pr={12}>
+                            <Text opacity={1} pl={{base:2}}>•{servicio}</Text>
+                        <Text opacity={1} pl={{base:2}}>{detalle} </Text>
+                        </Box>
+                        <Box pt={2}>
+                            <Icon as={CgArrowRightO} ></Icon>
+                        </Box>
+                    </Flex>
+                    
+                    
+                    
+
             </Link>
             </Box> 
         </Box>  

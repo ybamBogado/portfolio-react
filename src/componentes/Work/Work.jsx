@@ -5,17 +5,21 @@ import { MyWork } from '../MyWork/MyWork'
 
 let Work=({imgW1,imgW2,imgW3})=>{
     const colores_W={
-        fondo:"#252525",
+        fondo:"#212121",
         texto:"#d1d1d0"
     }
     return(
-        <Flex bg={colores_W.fondo} color={colores_W.texto}>
-            <Box 
-            pr={{base:"16"}}
-            pl={{base:"44"}}>
+        <Flex bg={colores_W.fondo} color={colores_W.texto}
+        pt={{base:20}} 
+        pb={{base:20}}>
+            <Box
+            pt={{base:20}} 
+            pr={{base:60}}
+            pl={{base:44}}
+            >
                 <Text as="sup">Mi</Text>
                 <Text as={"h1"}>Trabajo</Text>
-                <FlechaL texto1="Ver" texto2=" Más" enlace="#"/>
+                <FlechaL texto1="Ver" texto2=" Más" enlace="https://github.com/ybamBogado?tab=repositories"/>
             </Box>
             <Flex>
                 <Box as='flex'>
