@@ -8,19 +8,21 @@ let Together=({imgT})=>{
     }
     return(
         <Box bgImage={imgT}
-        pl={{base:44}} 
-        pr={{base:44}} 
-        pt={{base:20}}
-        pb={{base:20}}
+        pl={{base:"8",md:"15",lg:"40",xl:"44"}} 
+        pr={{base:"8",md:"15",lg:"40",xl:"44"}} 
+        pt={{base:5,md:10,lg:20}}
+        pb={{base:5,md:10,lg:20}}
         color={colores_f.texto}
         textAlign="center">
-            <Text >¿Preparado para cambiar tu trabajo?</Text>
-            <Box  pt={{base:2,md:6,lg:10}} >
+            <Text fontSize={{base:4,sd:"6",md:10,lg:20,xl:25}} >¿Preparado para cambiar tu trabajo?</Text>
+            <Box pt={{base:4,md:6,lg:10}} >
                 <Icon as={HiOutlineArrowLongDown}
-            transform="scaleY(4)"></Icon>
+            transform={{base:"scaleY(2)",lg:"scaleY(4)"}}></Icon>
             </Box>
             
-            <Text as="h1" fontWeight='bold'>Vamos A Trabajar Juntos</Text>
+            <Text as="h1" fontWeight='bold'
+            fontSize={{base:10,md:20,lg:"40"}}
+            >Vamos A Trabajar Juntos</Text>
             
         </Box>
     )

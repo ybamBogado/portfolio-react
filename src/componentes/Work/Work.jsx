@@ -30,13 +30,20 @@ let Work=({imgW1,imgW2,imgW3})=>{
             flexDirection={{base:"column",lg:"row"}}
             >
                 <Box as='flex' 
-                flexDirection={{base:"column",lg:"row"}}>
-                    <Box mr={8} mb={8}>
+                flexDirection={{base:"column",lg:"row"}}
+                display={{base:"none",sm:"revert"}}>
+                    <Box mr={{md:8}} mb={{md:8}}>
                         <MyWork img={imgW1} servicio="Diseño de página" detalle="inicio de sesion" link="https://ybambogado.github.io/image-based-web-project/pages/tripy.html"/>
                     </Box>
-                    <MyWork img={imgW2} servicio="Creaciòn de paginas" detalle="Landing page" link="https://github.com/ybamBogado/hospital_menu"/>
+                    <Box pt={{base:2,sd:0}} 
+                    pb={{base:2,sd:0}}>
+                        <MyWork img={imgW2} servicio="Creaciòn de paginas" 
+                        detalle="Landing page" link="https://github.com/ybamBogado/hospital_menu"/>
+                    </Box>
+                    
                 </Box>
-                <Box pt={{base:10}}>
+                <Box pt={{base:2,sd:4,md:10}}
+                display={{base:"none",sm:"revert"}}>
                     <MyWork img={imgW3} servicio="Aplicaciones de consola" detalle="Menu hospital" link="https://github.com/ybamBogado/hospital_menu"/>
                 </Box>
             </Flex>

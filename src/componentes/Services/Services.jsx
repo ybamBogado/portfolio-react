@@ -1,6 +1,7 @@
-import { Box, Flex, Text} from '@chakra-ui/react'
+import { Box, Flex, Icon, Text} from '@chakra-ui/react'
 import { GaleriaR } from '../Galeria/GaleriaR'
 import { GaleriaL } from '../Galeria/GaleriaL'
+import { HiOutlineArrowLongDown } from "react-icons/hi2"
 
 
 let Services=({imgS1,imgS2})=>{
@@ -13,19 +14,19 @@ let Services=({imgS1,imgS2})=>{
     id='servicios'
     bg={colores_S.fondo} 
     color={colores_S.texto}
-    pl={{base:44}} 
-    pr={{base:44}} 
-    pt={{base:20}}
-    pb={{base:20}}>
-        <Flex>
+    pl={{base:"10",md:"20",lg:"40",xl:"44"}}
+    pr={{base:"10",md:"20",lg:"40",xl:"44"}}
+    pt={{base:5,md:10,lg:20}}
+    pb={{base:5,md:10,lg:20}}>
+        <Flex >
             <Box>
                 <Text
-                fontSize={{base:20,lg:30}}>Mis</Text>
+                fontSize={{base:10,lg:30}}>Mis</Text>
                 <Text
                 fontWeight='bold'
                 fontSize={{base:22,lg:32}}>Servicios</Text>
             </Box>
-            icono flecha abajo
+
         </Flex>
         <GaleriaR h1="Diseño de páginas web" 
         p="Puedo plasmar tu idea de página en la realidad
@@ -40,7 +41,7 @@ let Services=({imgS1,imgS2})=>{
         link="https://github.com/ybamBogado/hospital_menu"
         />    
         </Box>
-        
+                
         </Box>
         
     )

@@ -15,11 +15,11 @@ let Hero=({imgh})=>{
         bg={colores_H.fondo}
         flexDirection={{base:"column",md:"row"}}
         pl={{base:"10",md:"20",lg:"40",xl:"44"}}
-        pb={{base:2,md:5, lg:10}}
+        pb={{base:2,md:5, lg:20}}
         >
             <Box as="div" text
-            pt={{base:36, lg:44}}
-            >
+            pt={{base:15,md:36, lg:44}}
+            textAlign={{base:"center",md:"start"}}>
                 <Text as={"sup"}
                 fontSize={{base:10,md:20,lg:30}}
                 textTransform='uppercase'>
@@ -29,7 +29,7 @@ let Hero=({imgh})=>{
                 fontSize={{base:12,md:22,lg:32}}
                 >Diseñador Web Full Stack</Text>
                 <Text as={"p"}
-                fontSize={{base:15, lg:15}}
+                fontSize={{base:15, lg:18}}
                 >Perfeccionándome como diseñador web, camino a ser analista programador. Recorre mi portafolio para ver mi capacidad de traer tus ideas a la realidad</Text>
                 <Box
                 pt={{base:1,lg:4}}>
@@ -37,11 +37,11 @@ let Hero=({imgh})=>{
                 </Box>
             </Box>
             <Image src={imgh}
-            pt={{base:38, lg:38}}
-            pr={{base:44}}
+            pt={{base:20,md:30, lg:38}}
+            pr={{md:"30",lg:"40",xl:"44"}}
             pl={{base:56}}
-            w={{base:"60%"}}
-            display={{base:"none", lg:"inline"}}></Image>
+            w={{md:"40%",lg:"60%"}}
+            display={{base:"none", md:"inline"}}></Image>
         </Flex>
     )
 }

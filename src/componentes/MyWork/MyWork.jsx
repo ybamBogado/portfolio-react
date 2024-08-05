@@ -6,7 +6,8 @@ let MyWork=({img,servicio,detalle, link, })=>{
         <Box boxSize={{base:250}}
         bgImage={img} backgroundSize={"cover"}
         position="relative"
-        borderRadius={{base:10}}>
+        borderRadius={{base:10}}
+        >
             <Box bg={"black"} w={"100%"} 
             opacity={0.5}
             position='absolute' bottom={0} 
@@ -17,7 +18,7 @@ let MyWork=({img,servicio,detalle, link, })=>{
                 }}
                 >
                     <Flex>
-                        <Box pr={12}>
+                        <Box pr={{base:4,lg:12}}>
                             <Text opacity={1} pl={{base:2}}>•{servicio}</Text>
                         <Text opacity={1} pl={{base:2}}>{detalle} </Text>
                         </Box>
@@ -25,10 +26,6 @@ let MyWork=({img,servicio,detalle, link, })=>{
                             <Icon as={CgArrowRightO} ></Icon>
                         </Box>
                     </Flex>
-                    
-                    
-                    
-
             </Link>
             </Box> 
         </Box>  

@@ -16,13 +16,13 @@ let FlechaL=({texto1,texto2,enlace})=>{
             <Link href={enlace}
             _hover={{textDecoration:"none", color:"white"}}>
                 <Box bg={colores.marron} as={"a"} href={enlace}
-                pt={{base:4}}
-                pb={{base:4}}
-                pl={{base:4}}>
+                pt={{base:onabort,md:4}}
+                pb={{base:0,md:4}}
+                pl={{base:0,md:4}}>
                     {texto1}
             </Box>
             {texto2}
-            <Icon as={CgArrowLongRight} w={6} h={2}  
+            <Icon as={CgArrowLongRight} w={{base:2,lg:6}} h={2}  
             transform="scaleX(10)" 
             ml={10}></Icon>
             
