@@ -6,8 +6,8 @@ function NavBar() {
     return(
         <Flex
         as="nav" 
-        ml={{base:"25",xl:"30",lg:"35"}} 
-        color="#d1d1d0"
+        ml={{base:"25",lg:"35",xl:"30"}} 
+        color={"#d1d1d0"}
         fontSize={{base:15,md:20, lg:22}}
         flexDirection={{base:"column",md:"row"}}
         textAlign={"Center"}>
@@ -21,7 +21,8 @@ function NavBar() {
                 position: "absolute", 
                 top: "10px", 
                 left: "25%",
-                transform:"translateX(50%)"
+                transform:"translateX(50%)",
+                color:"#ffffff"
             }
                 
             }}
