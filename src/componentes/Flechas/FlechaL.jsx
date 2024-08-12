@@ -25,7 +25,7 @@ let FlechaL=({texto1,texto2,enlace})=>{
                 </Box>
                 {texto2}
                 <Icon as={CgArrowLongRight} w={{base:2,lg:6}} h={2}  
-                transform={{sm:"scaleX(5)",md:"scaleX(10)",lg:"scaleX(14)"}}
+                transform={{base:"scaleX(2)",sm:"scaleX(5)",md:"scaleX(10)",lg:"scaleX(14)"}}
                 rotate={{base:"180"}}
                 ml={{base:4,sm:6,md:10,lg:12}}
                 display={{base:"none",sm:"inline"}}>
