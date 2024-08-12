@@ -20,23 +20,35 @@ let Footer=()=>{
         pt={{base:5,md:10,lg:20}}
         pb={{base:5,md:10,lg:20}}
         alignContent={'space-between'}
-        flexDirection={{base:"column",lg:"row"}}
+        flexDirection={{base:"column",md:"row"}}
+        textAlign={{base:"center",md:"start"}}
         >
-            <Text>
-                <Text fontFamily={logo}
-                fontSize={{base:20,lg:50}}
-                >IB</Text>
-            Comprometido a sorprender superando espectativas. Me especializo en crear experiencia web para el usuario. Explora mi portfolio para sorprenderte con mi implementación de ideas a la realidad. Te invito a una nueva experiencia de usuario.
-            </Text>
-            <Box as='div' border={"2px solid"} borderStyle={{base:"solid none none none",lg:"none none none solid"}}
-            pl={{base:0,lg:15}}
-            pr={{base:0,lg:2}}
-            textAlign={{base:"center",lg:"end"}}
+            {/*izquierda*/}
+            <Box
+            pr={{base:0,md:15,lg:20}}>
             
+                <Flex as={"p"}
+                fontSize={{base:15,md:16}}
+                flexDirection={{base:"column",sm:"row",md:"column"}}>
+                    <Text fontFamily={logo}
+                    fontSize={{base:30,md:40,lg:50}}
+                    >IB
+                    </Text>
+                    Comprometido a sorprender superando espectativas. Me especializo en crear experiencia web para el usuario. Explora mi portfolio para sorprenderte con mi implementación de ideas a la realidad. Te invito a una nueva experiencia de usuario.
+                </Flex>
+            
+            </Box>
+            
+            
+            {/*Derecha*/}
+            <Box as='div' border={"2px solid"} borderStyle={{base:"solid none none none",md:"none none none solid"}}
+            pl={{base:0,md:15,lg:20}}
+            pr={{base:0,md:2}}
+            textAlign={{base:"center",md:"end"}}
             >
                 <Text as={"h1"}
                 fontWeight='bold'
-                
+                fontSize={{base:22,lg:32}}
                 >
                 Contacto
                 </Text>

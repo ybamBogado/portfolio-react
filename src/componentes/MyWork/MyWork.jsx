@@ -3,10 +3,11 @@ import { CgArrowRightO } from "react-icons/cg"
 let MyWork=({img,servicio,detalle, link, })=>{
 
     return(
-        <Box boxSize={{base:250}}
+        <Box boxSize={{base:250,sm:200,xl:250}}
         bgImage={img} backgroundSize={"cover"}
         position="relative"
         borderRadius={{base:10}}
+        
         >
             <Box bg={"black"} w={"100%"} 
             opacity={0.5}

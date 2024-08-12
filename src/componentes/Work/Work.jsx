@@ -14,38 +14,45 @@ let Work=({imgW1,imgW2,imgW3})=>{
         bg={colores_W.fondo} color={colores_W.texto}
         pt={{base:10,md:20}} 
         pb={{base:10,md:20}}
-        flexDirection={{base:"column",lg:"row"}}
+        flexDirection={{base:"column",md:"row"}}
         justifyItems={{base:"center"}}
         alignItems={{base:"center"}}>
             <Box
             pt={{base:20}} 
-            pr={{base:20,md:60}}
-            pl={{base:10,md:44}}
+            pr={{base:0,md:30,lg:60}}
+            pl={{base:0,md:20,lg:44}}
+            textAlign={{base:"center",md:"start"}}
             >
-                <Text as="sup">Mi</Text>
-                <Text as={"h1"}>Trabajo</Text>
+                <Text fontSize={{base:20,lg:30}}
+                >
+                Mi</Text>
+                <Text as={"h1"}
+                fontWeight='bold'
+                fontSize={{base:22,lg:32}}>
+                Trabajo
+                </Text>
                 <FlechaL texto1="Ver" texto2=" Más" enlace="https://github.com/ybamBogado?tab=repositories"/>
             </Box>
             <Flex pt={{base:2}}
-            flexDirection={{base:"column",lg:"row"}}
+            flexDirection={{base:"column",md:"row"}}
             >
                 <Box as='flex' 
-                flexDirection={{base:"column",lg:"row"}}
-                display={{base:"none",sm:"revert"}}>
-                    <Box mr={{md:8}} mb={{md:8}}>
+                display={{base:"none",sm:"inline"}}>
+                    <Box mr={{base:2,md:8}} mb={{md:8}}>
                         <MyWork img={imgW1} servicio="Diseño de página" detalle="inicio de sesion" link="https://ybambogado.github.io/image-based-web-project/pages/tripy.html"/>
                     </Box>
-                    <Box pt={{base:2,sd:0}} 
-                    pb={{base:2,sd:0}}>
+                    <Box 
+                    mr={{base:2,md:8}} mb={{md:8}}>
                         <MyWork img={imgW2} servicio="Creaciòn de paginas" 
                         detalle="Landing page" link="https://github.com/ybamBogado/hospital_menu"/>
                     </Box>
                     
-                </Box>
-                <Box pt={{base:2,sd:4,md:10}}
-                display={{base:"none",sm:"revert"}}>
-                    <MyWork img={imgW3} servicio="Aplicaciones de consola" detalle="Menu hospital" link="https://github.com/ybamBogado/hospital_menu"/>
-                </Box>
+                    </Box>
+                    <Box pt={{base:4,md:10}}
+                        display={{base:"none",sm:"inline"}}>
+                        <MyWork img={imgW3} servicio="Aplicaciones de consola"
+                        detalle="Menu hospital" link="https://github.com/ybamBogado/hospital_menu"/>
+                    </Box>
             </Flex>
         </Flex>
     )

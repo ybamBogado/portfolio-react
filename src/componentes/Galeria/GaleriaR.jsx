@@ -5,16 +5,21 @@ import { HiOutlineArrowLongDown } from "react-icons/hi2"
 
 let GaleriaR=({h1,p,img, link})=>{
     return(
-        <Flex pt={{base:10}}>
-        <Box textAlign={{base:"center",md:"start"}}>
+        <Flex pt={{base:10}}
+        flexDirection={{base:"column",sm:"row"}}
+        >
+        <Box textAlign={{base:"center",md:"start"}}
+        pr={{base:4, md:10}}
+        pt={{base:2,lg:6,xl:8}}>
             <Text as="h1" 
-            pt={{base:2,lg:6,xl:8}}
+            
             fontWeight='bold'
-            fontSize={{base:12,md:22,lg:24,xl:26}}>
+            fontSize={{base:18,lg:28}}>
                 {h1}
                 
             </Text>
-            <Text fontSize={{base:8,sd:10,md:12, lg:15}}>
+            <Text fontSize={{base:15, lg:16}}
+            pb={{base:8,md:10,lg:40}}>
                 {p}
             </Text>
             <Box>
@@ -23,9 +28,9 @@ let GaleriaR=({h1,p,img, link})=>{
             
         </Box>
         
-            <Image src={img} boxSize={{md:100,lg:350}}
-            display={{base:"none",md:"inline"}}
-            pl={{base:2 , sm:4, md:8}}></Image>
+            <Image src={img} boxSize={{sm:200,lg:400}}
+            display={{base:"none",sm:"inline"}}
+            ></Image>
     </Flex>
     )
     

@@ -17,10 +17,10 @@ export const Header = () => {
       flexDirection={{base:"column",lg:"row"}}
       >
       <Box color="white" 
-      fontSize={{base:20,md:30,lg:50}}
+      fontSize={{base:30,md:40,lg:50}}
       fontFamily={logo}
       textAlign="center"
-      pl={{base:8,sm:0}}
+      pl={{base:8,md:0}}
       >
         IB
       </Box>

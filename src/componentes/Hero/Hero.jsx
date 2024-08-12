@@ -14,9 +14,11 @@ let Hero=({imgh})=>{
         id='inicio'
         color={colores_H.texto}
         bg={colores_H.fondo}
-        pl={{base:"10",md:"20",lg:"40",xl:"44"}}
-        pb={{base:2,md:5, lg:20}}>
-            <Flex 
+        pl={{base:2,sm:10,md:"20",lg:"40",xl:"44"}}
+        pr={{base:2,sm:10,md:0}}
+        pb={{base:2,md:5, lg:20}}
+        >
+        <Flex 
         
         flexDirection={{base:"column",md:"row"}}
         
@@ -24,16 +26,15 @@ let Hero=({imgh})=>{
             <Box as="div" text
             pt={{base:15,md:36, lg:44}}
             textAlign={{base:"center",md:"start"}}>
-                <Text as={"sup"}
-                    fontSize={{base:10,md:20,lg:30}}
-                    textTransform='uppercase'>
+                <Text
+                    fontSize={{base:20,lg:30}}>
                     Sobre Ivan Bogado</Text>
                     <Text as={"h1"}
                     fontWeight='bold'
-                    fontSize={{base:12,md:22,lg:32}}
+                    fontSize={{base:22,lg:32}}
                     >Diseñador Web Full Stack</Text>
                     <Text as={"p"}
-                    fontSize={{base:15, lg:18}}
+                    fontSize={{base:15,md:16}}
                     >Perfeccionándome como diseñador web, camino a ser analista programador. Recorre mi portafolio para ver mi capacidad de traer tus ideas a la realidad</Text>
                     <Box
                     pt={{base:1,lg:4}}>
@@ -41,11 +42,13 @@ let Hero=({imgh})=>{
                     </Box>
                 </Box>
                 <Image src={imgh}
-                pt={{base:20,md:30, lg:38}}
-                pr={{md:"30",lg:"40",xl:"44"}}
-                pl={{base:56}}
-                w={{md:"40%",lg:"60%"}}
-                display={{base:"none", md:"inline"}}></Image>
+                
+                pt={{base:0,sm:10,md:30, lg:38}}
+                pr={{base:20,lg:40,xl:44}}
+                pl={{base:40}}
+                w={{sm:"90%",md:"60%"}}
+                display={{base:"none", sm:"inline"}}>
+                </Image>
                 
         </Flex>
         <UnderHero/>

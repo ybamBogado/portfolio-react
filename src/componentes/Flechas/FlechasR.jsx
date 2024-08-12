@@ -11,23 +11,26 @@ let FlechasR=({texto1,texto2,enlace})=>{
         <Flex cursor="pointer"
         
         color={colores.texto}
-        justifyContent="flex-end"
-        mt={{base:8}}
-        mb={{base:2}}
+        justifyContent={{base:"center",md:"flex-end"}}
         >
             <Link href={enlace}
             
             _hover={{textDecoration:"none", color:"white"}}
             >
-                <Icon as={CgArrowLongLeft} w={6} h={2}  transform="scaleX(10)" mr={{base:0,md:8,lg:10}}></Icon>
+                <Icon as={CgArrowLongLeft} w={{base:2,lg:6}} h={2}
+                transform={{sm:"scaleX(5)",md:"scaleX(10)",lg:"scaleX(14)"}} 
+                mr={{base:4,sm:6,md:10,lg:12}}
+                display={{base:"none",sm:"inline"}}
+                >
+                </Icon>
                 {texto1}
                 <Box a bg={colores.marron} as={"a"} 
                 href={enlace} 
-                pt={{base:0,md:4}}
+                pt={{base:0,sm:4}}
                 pb={{base:0,sm:2}}
-                pr={{base:0,md:4}}>
+                pr={{base:0,sm:4}}>
                 {texto2}
-            </Box>
+                </Box>
             </Link>
             
         </Flex>
