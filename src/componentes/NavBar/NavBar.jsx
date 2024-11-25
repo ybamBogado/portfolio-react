@@ -9,10 +9,11 @@ function NavBar() {
         ml={{base:"25",lg:"35",xl:"30"}} 
         color={"#d1d1d0"}
         fontSize={{base:15,md:20, lg:22}}
-        flexDirection={{base:"column",md:"row"}}
+        flexDirection={{base:"row"}}
+        justify={"space-between"}
         textAlign={"Center"}>
             <Link as={"a"} href="#inicio" 
-            mr={{base:0,md:4,lg:8}}
+            mr={{base:4,lg:8}}
             textDecoration={"none"}
             position={"relative"}
             _hover={{_after:{
@@ -30,7 +31,7 @@ function NavBar() {
                     Inicio
             </Link>
             <Link href="#sobre" 
-            mr={{base:0,md:4,lg:8}}
+            mr={{base:4,lg:8}}
             position={"relative"} 
             _hover={{_after:{ 
                 content: '"•"',position: "absolute", 
@@ -42,7 +43,7 @@ function NavBar() {
                 Sobre
             </Link>
             <Link href="#portfolio" 
-            mr={{base:0,md:4,lg:8}}
+            mr={{base:4,lg:8}}
             position={"relative"} 
             _hover={{_after:{ 
                 content: '"•"',position: "absolute", 
@@ -54,7 +55,7 @@ function NavBar() {
                 Portfolio
             </Link>
             <Link href="#servicios" 
-            mr={{base:0,md:4,lg:8}}
+            mr={{base:4,lg:8}}
             position={"relative"} 
             _hover={{_after:{ 
                 content: '"•"',position: "absolute", 

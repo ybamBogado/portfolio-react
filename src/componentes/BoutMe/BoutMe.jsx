@@ -17,15 +17,17 @@ let BoutMe=({imgBm})=>{
         pr={{base:"10",md:"20",lg:"40",xl:"44"}}
         pt={{base:5,md:10,lg:20}}
         pb={{base:5,md:10,lg:20}}
-        flexDirection={{base:"column",md:"row"}}
+        direction={{base:"row"}}
         >
             <Image src={imgBm} 
             pt={{base:5,md:10, lg:15}}
             pr={{md:"25",lg:"40",xl:"44"}}
-            w={{sm:"90%",md:"50%"}}
-            display={{base:"none",md:"inline"}}>
+            h={{base:"300px",md:"400px"}}
+            w={{base:"400px",md:"600px"}}
+            fit="contain"
+            >
             </Image>
-            <Box textAlign={{base:"center",md:"end"}}>
+            <Box textAlign={{base:"end"}}>
                 <Text
                 fontSize={{base:20,lg:30}}
                 >Sobre

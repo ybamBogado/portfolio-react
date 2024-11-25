@@ -8,6 +8,7 @@ let Hero=({imgh})=>{
         fondo:"#212121",
         texto:"#d1d1d0"
     }
+    
     return(
         <Box
         as="section"
@@ -20,22 +21,25 @@ let Hero=({imgh})=>{
         >
         <Flex 
         
-        flexDirection={{base:"column",md:"row"}}
+        flexDirection={{base:"row"}}
         
         >
             <Box as="div" text
-            pt={{base:15,md:36, lg:44}}
-            textAlign={{base:"center",md:"start"}}>
+            pt={{base:15,md:26, lg:34}}
+            textAlign={{base:"start"}}>
                 <Text
+                    pt={{base:10}}
                     fontSize={{base:20,lg:30}}>
-                    Sobre Ivan Bogado</Text>
-                    <Text as={"h1"}
+                    Sobre Ivan Bogado
+                </Text>
+                <Text as={"h1"}
                     fontWeight='bold'
-                    fontSize={{base:22,lg:32}}
-                    >Diseñador Web Full Stack</Text>
+                    fontSize={{base:22,lg:32}}>
+                    Diseñador Web Full Stack
+                </Text>
                     <Text as={"p"}
-                    fontSize={{base:15,md:16}}
-                    >Perfeccionándome como diseñador web, camino a ser analista programador. Recorre mi portafolio para ver mi capacidad de traer tus ideas a la realidad</Text>
+                    fontSize={{base:16}}
+                    >Perfeccionándome como desarrolador web y en camino a ser analista programador. Recorre mi portafolio para ver mi capacidad de traer tus ideas a la realidad</Text>
                     <Box
                     pt={{base:1,lg:4}}>
                         <FlechaL texto1="CONTRATA" texto2="ME" enlace="https://github.com/ybamBogado?tab=repositories" color={colores_H.flecha}/>
@@ -44,9 +48,11 @@ let Hero=({imgh})=>{
                 <Image src={imgh}
                 
                 pt={{base:0,sm:10,md:30, lg:38}}
-                pr={{base:20,lg:40,xl:44}}
+                pr={{base:10,lg:40,xl:44}}
                 pl={{base:20, md:40}}
-                w={{md:"60%"}}
+                h={{base:"300px",md:"400px"}}
+                w={{base:"400px",md:"600px"}}
+                fit="contain"
                 >
                 </Image>
                 
