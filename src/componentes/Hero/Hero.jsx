@@ -35,7 +35,7 @@ let Hero=({imgh})=>{
                 <Text as={"h1"}
                     fontWeight='bold'
                     fontSize={{base:22,lg:32}}>
-                    Diseñador Web Full Stack
+                    Desarrollador Web Full Stack
                 </Text>
                     <Text as={"p"}
                     fontSize={{base:16}}
@@ -45,6 +45,7 @@ let Hero=({imgh})=>{
                         <FlechaL texto1="CONTRATA" texto2="ME" enlace="https://github.com/ybamBogado?tab=repositories" color={colores_H.flecha}/>
                     </Box>
                 </Box>
+                {/* texto para que git hub vea que cambie algo */}
                 <Image src={imgh}
                 
                 pt={{base:0,sm:10,md:30, lg:38}}

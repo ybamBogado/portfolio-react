@@ -8,7 +8,7 @@ function NavBar() {
         as="nav" 
         ml={{base:"25",lg:"35",xl:"30"}} 
         color={"#d1d1d0"}
-        fontSize={{base:15,md:20, lg:22}}
+        fontSize={{base:15,md:20}}
         flexDirection={{base:"row"}}
         justify={"space-between"}
         textAlign={"Center"}>
