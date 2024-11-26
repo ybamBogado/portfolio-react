@@ -21,9 +21,9 @@ let BoutMe=({imgBm})=>{
         >
             <Image src={imgBm} 
             pt={{base:5,md:10, lg:15}}
-            pr={{md:"25",lg:"40",xl:"44"}}
-            h={{base:"300px",md:"400px"}}
-            w={{base:"400px",md:"600px"}}
+            pr={{base:10,md:"25",lg:"40",xl:"44"}}
+            h={{base:"200px",md:"400px"}}
+            w={{base:"200px",sm:"300px",md:"600px"}}
             fit="contain"
             >
             </Image>
