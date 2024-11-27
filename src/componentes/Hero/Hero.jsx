@@ -15,8 +15,8 @@ let Hero=({imgh})=>{
         id='inicio'
         color={colores_H.texto}
         bg={colores_H.fondo}
-        pl={{base:2,sm:10,md:20,lg:40,xl:44}}
-        pr={{base:2,sm:10,md:0}}
+        pl={{base:10,sm:10,md:20,lg:40,xl:44}}
+        pr={{base:8,sm:10,md:0}}
         pb={{base:2,md:5, lg:20}}
         >
         <Flex 
@@ -49,8 +49,8 @@ let Hero=({imgh})=>{
                 <Image src={imgh}
                 
                 pt={{base:20,sm:10,md:30, lg:38}}
-                pr={{base:10,lg:40,xl:44}}
-                pl={{base:20, md:40}}
+                pr={{base:0,lg:40,xl:44}}
+                pl={{base:10, md:40}}
                 h={{base:"200px",md:"400px"}}
                 w={{base:"200px",sm:"300px",md:"600px"}}
                 fit="contain"

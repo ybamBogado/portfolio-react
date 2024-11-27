@@ -13,14 +13,14 @@ let BoutMe=({imgBm})=>{
         id='sobre'
         bg={colores_bm.fondo} 
         color={colores_bm.texto}
-        pl={{base:"10",md:"20",lg:"40",xl:"44"}} 
-        pr={{base:"10",md:"20",lg:"40",xl:"44"}}
-        pt={{base:5,md:10,lg:20}}
+        pl={{base:8,md:"20",lg:"40",xl:"44"}} 
+        pr={{base:8,md:"20",lg:"40",xl:"44"}}
+        pt={{base:10,md:10,lg:20}}
         pb={{base:5,md:10,lg:20}}
         direction={{base:"row"}}
         >
             <Image src={imgBm} 
-            pt={{base:5,md:10, lg:15}}
+            pt={{base:8,md:10, lg:15}}
             pr={{base:10,md:"25",lg:"40",xl:"44"}}
             h={{base:"200px",md:"400px"}}
             w={{base:"200px",sm:"300px",md:"600px"}}
@@ -30,6 +30,7 @@ let BoutMe=({imgBm})=>{
             <Box textAlign={{base:"end"}}>
                 <Text
                 fontSize={{base:20,lg:30}}
+                pt={{base:8,md:0}}
                 >Sobre
                 </Text>
                 <Text as="h1"
