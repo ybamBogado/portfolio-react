@@ -11,7 +11,7 @@ let FlechaL=({texto1,texto2,enlace})=>{
     return(
         <Flex cursor={"pointer"} alignItems={"center"}
         color={colores.texto}
-        mt={{base:8}}
+        mt={{base:8,xl:32}}
         mb={{base:2}}
         fontSize={18}
         justifyContent={{base:"center",md:"start"}}>
@@ -27,7 +27,7 @@ let FlechaL=({texto1,texto2,enlace})=>{
                 <Icon as={CgArrowLongRight} w={{base:2,lg:6}} h={2}  
                 transform={{base:"scaleX(2)",sm:"scaleX(5)",md:"scaleX(10)",lg:"scaleX(14)"}}
                 rotate={{base:"180"}}
-                ml={{base:4,sm:6,md:10,lg:12}}
+                ml={{base:0,sm:6,md:10,lg:12}}
                 display={{base:"none",sm:"inline"}}>
                 </Icon>
             

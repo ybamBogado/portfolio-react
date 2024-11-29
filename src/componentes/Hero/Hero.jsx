@@ -21,14 +21,14 @@ let Hero=({imgh})=>{
         >
         <Flex 
         
-        flexDirection={{base:"row"}}
+        flexDirection={{base:"column",md:"row"}}
         
         >
             <Box as="div" text
             pt={{base:15,md:26, lg:34}}
             textAlign={{base:"center",sm:"start"}}>
                 <Text
-                    pt={{base:10}}
+                    pt={{base:10,lg:12}}
                     fontSize={{base:20,lg:30}}>
                     Sobre Ivan Bogado
                 </Text>
@@ -48,10 +48,10 @@ let Hero=({imgh})=>{
                 </Box>
                 <Image src={imgh}
                 
-                pt={{base:20,sm:10,md:30, lg:38}}
-                pr={{base:0,lg:40,xl:44}}
+                pt={{base:10,sm:10,md:20, lg:38}}
+                pr={{base:0,md:20,lg:40,xl:44}}
                 pl={{base:10, md:40}}
-                h={{base:"200px",md:"400px"}}
+                h={{base:"200px",md:"400px",lg:"500px"}}
                 w={{base:"200px",sm:"300px",md:"600px"}}
                 fit="contain"
                 >
