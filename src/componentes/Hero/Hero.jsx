@@ -50,7 +50,9 @@ let Hero=({imgh})=>{
                 
                 pt={{base:10,sm:10,md:20, lg:38}}
                 pr={{base:0,md:20,lg:40,xl:44}}
-                pl={{base:10, md:40}}
+                pl={{base:0, md:40}}
+                ml={{base:"auto",md:0}}
+                mr={{base:"auto",md:0}}
                 h={{base:"200px",md:"400px",lg:"500px"}}
                 w={{base:"200px",sm:"300px",md:"600px"}}
                 fit="contain"
