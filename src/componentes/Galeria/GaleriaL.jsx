@@ -4,9 +4,9 @@ import { FlechasR } from "../Flechas/FlechasR"
 let GaleriaL=({h1,p,img,link})=>{
     return(
         <Flex 
-        flexDirection={{base:"column",sm:"row"}}>
+        flexDirection={{base:"column-reverse",sm:"row"}}>
         <Image src={img} boxSize={{sm:200,lg:350}}
-            display={{base:"none",sm:"inline"}}
+            
             
         ></Image>
         <Box textAlign={{base:"center",md:"end"}}>

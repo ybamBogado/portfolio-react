@@ -29,7 +29,7 @@ let GaleriaR=({h1,p,img, link})=>{
         </Box>
         
             <Image src={img} boxSize={{sm:200,lg:400}}
-            display={{base:"none",sm:"inline"}}
+            
             ></Image>
     </Flex>
     )

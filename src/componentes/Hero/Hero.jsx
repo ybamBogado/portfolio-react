@@ -18,6 +18,7 @@ let Hero=({imgh})=>{
         pl={{base:10,sm:10,md:20,lg:40,xl:44}}
         pr={{base:8,sm:10,md:0}}
         pb={{base:2,md:5, lg:20}}
+        
         >
         <Flex 
         
@@ -26,7 +27,9 @@ let Hero=({imgh})=>{
         >
             <Box as="div" text
             pt={{base:15,md:26, lg:34}}
+            mx={{base:0,xl:40}}
             textAlign={{base:"center",sm:"start"}}>
+                
                 <Text
                     pt={{base:10,lg:12}}
                     fontSize={{base:20,lg:30}}>
@@ -51,7 +54,7 @@ let Hero=({imgh})=>{
                 pt={{base:10,sm:10,md:20, lg:38}}
                 pr={{base:0,md:20,lg:40,xl:44}}
                 pl={{base:0, md:40}}
-                ml={{base:"auto",md:0}}
+                ml={{base:"auto",md:0,xl:20}}
                 mr={{base:"auto",md:0}}
                 h={{base:"200px",md:"400px",lg:"500px"}}
                 w={{base:"200px",sm:"300px",md:"600px"}}

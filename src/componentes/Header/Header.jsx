@@ -21,6 +21,7 @@ export const Header = () => {
       fontFamily={logo}
       textAlign="center"
       pl={{base:8,md:0}}
+      
       >
         IB
       </Box>
