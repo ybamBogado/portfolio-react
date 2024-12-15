@@ -27,7 +27,7 @@ let Hero=({imgh})=>{
         >
             <Box as="div" text
             pt={{base:15,md:26, lg:34}}
-            mx={{base:0,xl:40}}
+            mx={{base:0,"2xl":40}}
             textAlign={{base:"center",sm:"start"}}>
                 
                 <Text

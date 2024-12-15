@@ -6,8 +6,8 @@ function NavBar() {
     return(
         <Flex
         as="nav" 
-        ml={{base:0,sm:"25",lg:"35",xl:10}}
-        mr={{base:0,xl:40}}
+        ml={{base:0,sm:"25",lg:"35","2xl":10}}
+        mr={{base:0,"2xl":40}}
         
         color={"#d1d1d0"}
         fontSize={{base:15,md:20, lg:22}}
@@ -68,7 +68,7 @@ function NavBar() {
                 Servicios
             </Link>
             <Link href="#a_contacto"
-            mr={{base:0,xl:24}}
+            mr={{base:0,"2xl":24}}
             position={"relative"} 
             _hover={{_after:{ 
                 content: '"•"',position: "absolute", 
