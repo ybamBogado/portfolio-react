@@ -4,7 +4,8 @@ let MyWork=({img,servicio,detalle, link, })=>{
 
     return(
         <Box boxSize={{base:250,sm:200,xl:250}}
-        bgImage={img} backgroundSize={"cover"}
+        bgImage={img} backgroundSize={"contain"}
+        background-repeat={"no-repeat"}
         position="relative"
         borderRadius={{base:10}}
         
@@ -19,11 +20,14 @@ let MyWork=({img,servicio,detalle, link, })=>{
                 }}
                 >
                     <Flex>
-                        <Box pr={{base:4,lg:12}}>
+                        <Box pr={{base:4,lg:12}}
+                        mx={{base:2}}>
                             <Text opacity={1} pl={{base:2}}>•{servicio}</Text>
                         <Text opacity={1} pl={{base:2}}>{detalle} </Text>
                         </Box>
-                        <Box pt={2}>
+                        <Box 
+                        mr={"auto"}
+                        pt={2}>
                             <Icon as={CgArrowRightO} ></Icon>
                         </Box>
                     </Flex>

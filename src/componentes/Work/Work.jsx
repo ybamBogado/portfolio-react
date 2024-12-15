@@ -39,11 +39,11 @@ let Work=({imgW1,imgW2,imgW3})=>{
                 <Box as='flex' 
                 display={{base:"none",sm:"inline"}}>
                     <Box mr={{base:2,md:8}} mb={{md:8}}>
-                        <MyWork img={imgW1} servicio="Diseño de página" detalle="inicio de sesion" link="https://ybambogado.github.io/image-based-web-project/pages/tripy.html"/>
+                        <MyWork img={imgW1} servicio=" Diseño de página" detalle="inicio de sesion" link="https://ybambogado.github.io/image-based-web-project/pages/tripy.html"/>
                     </Box>
                     <Box 
                     mr={{base:2,md:8}} mb={{md:8}}>
-                        <MyWork img={imgW2} servicio="Creaciòn de paginas" 
+                        <MyWork img={imgW2} servicio=" Creaciòn de paginas" 
                         detalle="Landing page" link="https://github.com/ybamBogado/hospital_menu"/>
                     </Box>
                     
