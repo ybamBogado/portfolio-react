@@ -22,31 +22,33 @@ let BoutMe=({imgBm})=>{
             <Image src={imgBm} 
             pt={{base:8,md:10, lg:15}}
             pr={{base:0,md:"25",lg:"40",xl:"44"}}
-            pl={{base:0,md:0}}
             ml={{base:"auto",md:0}}
             mr={{base:"auto",md:0}}
-            h={{base:"200px",md:"400px"}}
-            w={{base:"200px",sm:"300px",md:"600px"}}
+            h={{base:"200px",md:"400px",lg:"500px",xl:"600px"}}
+                w={{base:"200px",sm:"300px",md:"600px", xl:"700px"}}
             fit="contain"
             >
             </Image>
-            <Box textAlign={{base:"center",md:"end"}}>
+            <Box 
+            textAlign={{base:"center",md:"end"}}>
                 <Text
-                fontSize={{base:20,lg:30}}
+                color={'white'}
+                fontSize={{base:"22px",lg:"30px",xl:"40px"}}
                 pt={{base:10,lg:8}}
                 >Sobre
                 </Text>
                 <Text as="h1"
+                color={'white'}
                 fontWeight='bold'
-                fontSize={{base:22,lg:32}}
+                fontSize={{base:"22px",lg:"30px",xl:"40px"}}
                 >Mi
                 </Text>
                 <Text as="p"
-                fontSize={{base:15, lg:16}}>
+                fontSize={{base:"16px",xl:"25px"}}>
                 Hola! Soy Iván Bogado, programador web full stack. Tengo bastantes proyectos que puedes visitar. Sobresalgo por el conocimiento que tengo sobre distintos campos. Mis habilidades incluyen Python, C#, MySQL, HTML y CSS
                 </Text>
                 <Box
-                pt={{base:8,md:28,lg:8,xl:28}}
+                pt={{base:8,md:28,lg:56}}
                 >
                     <FlechasR 
                     texto1="DESCAR"

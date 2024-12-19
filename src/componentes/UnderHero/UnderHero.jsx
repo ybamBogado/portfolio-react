@@ -6,7 +6,7 @@ let UnderHero=()=>{
         pt={{base:4,md:12,lg:20}}
         flexDirection={{base:"column",md:"row"}}
         textAlign={{base:"center"}}
-        mx={{base:0,xl:40}}
+        
         >
             <Box pr={{base:2,md:8,lg:10}}
             >

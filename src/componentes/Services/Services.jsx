@@ -24,13 +24,15 @@ let Services=({imgS1,imgS2})=>{
             <Box
             >
                 <Text
-                fontSize={{base:20,lg:30}}>
+                color={'white'}
+                fontSize={{base:"22px",lg:"30px",xl:"40px"}}>
                 Mis
                 </Text>
                 <Text
                 as={"h1"}
                 fontWeight='bold'
-                fontSize={{base:22,lg:32}}>
+                color={'white'}
+                fontSize={{base:"22px",lg:"30px",xl:"40px"}}>
                 Servicios
                 </Text>
             </Box>

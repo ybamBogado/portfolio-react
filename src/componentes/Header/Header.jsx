@@ -20,7 +20,7 @@ export const Header = () => {
       fontSize={{base:30,md:40,lg:50}}
       fontFamily={logo}
       textAlign="center"
-      pl={{base:8,md:0,"2xl":40}}
+      
       
       >
         IB

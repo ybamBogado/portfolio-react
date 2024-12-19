@@ -17,7 +17,10 @@ let FlechasR=({texto1,texto2,enlace})=>{
             
             _hover={{textDecoration:"none", color:"white"}}
             >
-                <Icon as={CgArrowLongLeft} w={{base:0,sm:2,lg:6}} h={2}
+                <Icon 
+                as={CgArrowLongLeft} 
+                w={{base:0,sm:2,lg:6}} 
+                h={2}
                 transform={{sm:"scaleX(5)",md:"scaleX(10)",lg:"scaleX(14)"}} 
                 mr={{base:2,sm:6,md:10,lg:12}}
                 display={{base:"none",sm:"inline"}}

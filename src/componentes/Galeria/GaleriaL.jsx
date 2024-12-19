@@ -12,12 +12,15 @@ let GaleriaL=({h1,p,img,link})=>{
         <Box textAlign={{base:"center",md:"end"}}>
             <Text as="h1" 
             pt={{base:2,lg:6,xl:8}}
+            color={"white"}
             fontWeight='bold'
-            fontSize={{base:18,lg:28}}>
+            >
                 {h1}
             </Text>
-            <Text fontSize={{base:15, lg:16}}
-            pb={{base:8,md:10,lg:40}}>
+            <Text 
+            fontSize={{base:"16px",xl:"25px"}}
+            ml={{base:0,md:8}}
+            pb={{base:8,md:10,xl:"130px"}}>
                 {p}
             </Text>
             <FlechasR texto1="ver" texto2=" más" enlace={link}/>
