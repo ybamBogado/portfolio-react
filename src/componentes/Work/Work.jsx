@@ -38,7 +38,7 @@ alignItems={{ base: "center" }}
     <Box mr={{ base: 2, md: 4 }} mb={{ md: 4 }}>
       <MyWork
         img={imgW1}
-        servicio=" • Diseño de página"
+        servicio="Diseño de página"
         detalle="inicio de sesion"
         link="https://ybambogado.github.io/image-based-web-project/pages/tripy.html"
         bgGradient="linear(to-t, blackAlpha.800, transparent)"
@@ -47,9 +47,9 @@ alignItems={{ base: "center" }}
     <Box mr={{ base: 2, md: 4 }} mb={{ md: 4 }} pt={{ base: 4, md: 0 }}>
       <MyWork
         img={imgW2}
-        servicio=" • Creaciòn de paginas"
+        servicio="Creaciòn de paginas"
         detalle="Landing page"
-        link="https://github.com/ybamBogado/hospital_menu"
+        link="https://ybambogado.github.io/tp_opcional_2/"
         bgGradient="linear(to-t, blackAlpha.800, transparent)"
       />
     </Box>
@@ -57,7 +57,7 @@ alignItems={{ base: "center" }}
   <Box pt={{ base: 4, md: 10 }}>
     <MyWork
       img={imgW3}
-      servicio="• Aplicaciones de consola"
+      servicio="Aplicaciones de consola"
       detalle="Menu hospital"
       link="https://github.com/ybamBogado/hospital_menu"
       bgGradient="linear(to-t, blackAlpha.800, transparent)"
