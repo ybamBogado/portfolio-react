@@ -16,6 +16,7 @@ let Main=()=>{
         "img_Diseno":"https://raw.githubusercontent.com/ybamBogado/portfolio-web/main/img/servicios_1.jpeg",
         "img_Creacion":"https://raw.githubusercontent.com/ybamBogado/portfolio-web/main/img/servicios_2.jpeg",
         "img_Together":"https://raw.githubusercontent.com/ybamBogado/portfolio-web/main/img/trabajemos_juntos.jpeg",
+        "Img_ecommerce":"https://github.com/ybamBogado/portfolio-web/blob/main/img/ecomerce.jpg?raw=true",
         "fuente":"'Anek Devanagari', sans-serif, serif"
     }
     return(
@@ -23,7 +24,7 @@ let Main=()=>{
             <Box fontfamily={imagenes.fuente}>
                 <Hero imgh={imagenes.img_hero}/>
                 <BoutMe imgBm={imagenes.img_about}/>
-                <Work imgW1={imagenes.img_inicio_sesion} imgW2={imagenes.img_landing} imgW3={imagenes.img_python}/>
+                <Work imgW1={imagenes.img_inicio_sesion} imgW2={imagenes.img_landing} imgW3={imagenes.img_python} imgW4={imagenes.Img_ecommerce}/>
                 <Services imgS1={imagenes.img_Diseno} imgS2={imagenes.img_Creacion}/>
                 <Together imgT={imagenes.img_Together}/>
             </Box>
