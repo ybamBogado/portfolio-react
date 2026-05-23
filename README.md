@@ -1,8 +1,14 @@
-# React + Vite
+# Portfolio React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es mi portfolio personal desarrollado con **React + Vite** y estilado con **Chakra UI**.  
+La landing page muestra mi perfil como **Desarrollador Web Full Stack**, mis proyectos y un formulario de contacto directo que envía mensajes a mi correo mediante **EmailJS**.
 
-Currently, two official plugins are available:
+## 🚀 Demo
+Podés verlo online en:  
+👉 [https://ybambogado.github.io/portfolio-react/](https://ybambogado.github.io/portfolio-react/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologías utilizadas
+- [React](https://react.dev/) + [Vite](https://vitejs.dev/)  
+- [Chakra UI](https://chakra-ui.com/) para componentes y estilos  
+- [EmailJS](https://www.emailjs.com/) para el formulario de contacto  
+- [GitHub Pages](https://pages.github.com/) para el deploy
