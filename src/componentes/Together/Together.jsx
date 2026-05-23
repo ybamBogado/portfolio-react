@@ -1,7 +1,7 @@
 import { Box, Icon, Text } from "@chakra-ui/react"
 import { HiOutlineArrowLongDown } from "react-icons/hi2"
 
-let Together=({imgT})=>{
+let Together=({imgT, onContactClick})=>{
     const colores_f={
         fondo:"#0c0c0c",
         texto:"#d1d1d0"
@@ -24,6 +24,11 @@ let Together=({imgT})=>{
             
             <Text as="h1" fontWeight='bold'
             fontSize={{base:20,sm:30,lg:40}}
+            cursor="pointer"
+            display="inline-block"
+            _hover={{ color: "white", transform: "scale(1.05)" }}
+            transition="all 0.2s"
+            onClick={onContactClick}
             >Vamos A Trabajar Juntos</Text>
             
         </Box>

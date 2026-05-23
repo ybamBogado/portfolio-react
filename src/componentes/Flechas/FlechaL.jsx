@@ -2,7 +2,7 @@
 import { Box, Flex, Icon, Link } from "@chakra-ui/react"
 import { CgArrowLongRight } from "react-icons/cg";
 
-let FlechaL=({texto1,texto2,enlace})=>{
+let FlechaL=({texto1,texto2,enlace,onClick})=>{
     const colores={
         fondo:"#212121",
         texto:"#d1d1d0",
@@ -16,11 +16,20 @@ let FlechaL=({texto1,texto2,enlace})=>{
         fontSize={18}
         justifyContent={{base:"center",md:"start"}}>
             <Link href={enlace}
+            onClick={(e) => {
+                if (onClick) {
+                    e.preventDefault()
+                    onClick()
+                }
+            }}
             _hover={{textDecoration:"none", color:"white"}}>
-                <Box bg={colores.marron} as={"a"} href={enlace}
-                pt={{base:onabort,md:4}}
-                pb={{base:0,sm:4}}
-                pl={{base:0,sm:4}}>
+                <Box bg={colores.marron} as="span"
+                pt={{base:1,md:4}}
+                pb={{base:1,sm:4}}
+                pl={{base:1,sm:4}}
+                pr={{base:1,sm:4}}
+                display="inline-block"
+                >
                     {texto1}
                 </Box>
                 {texto2}

@@ -2,7 +2,7 @@ import { Box, Flex, Image, Link, Text } from '@chakra-ui/react'
 import { NavBar } from '../NavBar/NavBar'
 import "@fontsource/protest-guerrilla"
 
-export const Header = () => {
+export const Header = ({ onContactClick }) => {
   const logo="'Protest Guerrilla', sans-serif"
   return(
     <Flex 
@@ -25,7 +25,7 @@ export const Header = () => {
       >
         IB
       </Box>
-      <NavBar/>
+      <NavBar onContactClick={onContactClick}/>
     </Flex>
   )
 }

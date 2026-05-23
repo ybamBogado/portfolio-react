@@ -3,7 +3,7 @@ import { FlechaL } from '../Flechas/FlechaL'
 import { UnderHero } from '../UnderHero/UnderHero'
 
 
-let Hero=({imgh})=>{
+let Hero=({imgh, onContactClick})=>{
     const colores_H={
         fondo:"#212121",
         texto:"#d1d1d0"
@@ -50,7 +50,7 @@ let Hero=({imgh})=>{
                     >Perfeccionándome como desarrolador web y en camino a ser analista programador. Recorre mi portafolio para ver mi capacidad de traer tus ideas a la realidad</Text>
                     <Box
                     pt={{base:1,lg:4}}>
-                        <FlechaL texto1="CONTRATA" texto2="ME" enlace="https://github.com/ybamBogado?tab=repositories" color={colores_H.flecha}/>
+                        <FlechaL texto1="CONTRATA" texto2="ME" enlace="https://github.com/ybamBogado?tab=repositories" color={colores_H.flecha} onClick={onContactClick}/>
                     </Box>
                 </Box>
                 <Image src={imgh}
@@ -67,7 +67,7 @@ let Hero=({imgh})=>{
                 </Image>
                 
         </Flex>
-        <UnderHero/>
+        <UnderHero onContactClick={onContactClick}/>
         </Box>
         
     )

@@ -6,7 +6,7 @@ import { Services } from '../Services/Services'
 import "@fontsource-variable/anek-devanagari"
 import { Box } from '@chakra-ui/react'
 
-let Main=()=>{
+let Main=({ onContactClick })=>{
     const imagenes={
         "img_hero":"https://raw.githubusercontent.com/ybamBogado/portfolio-web/main/img/ivan-hero.jpeg",
         "img_about":"https://raw.githubusercontent.com/ybamBogado/portfolio-web/main/img/ivan-s2.jpeg",
@@ -22,15 +22,15 @@ let Main=()=>{
     return(
         <main>
             <Box fontfamily={imagenes.fuente}>
-                <Hero imgh={imagenes.img_hero}/>
+                <Hero imgh={imagenes.img_hero} onContactClick={onContactClick}/>
                 <BoutMe imgBm={imagenes.img_about}/>
                 <Work imgW1={imagenes.img_inicio_sesion} imgW2={imagenes.img_landing} imgW3={imagenes.img_python} imgW4={imagenes.Img_ecommerce}/>
                 <Services imgS1={imagenes.img_Diseno} imgS2={imagenes.img_Creacion}/>
-                <Together imgT={imagenes.img_Together}/>
+                <Together imgT={imagenes.img_Together} onContactClick={onContactClick}/>
             </Box>
             
         </main>
     )
 }
 
-export {Main}
+export {Main}

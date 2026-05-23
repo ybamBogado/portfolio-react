@@ -2,7 +2,7 @@ import { Box, Flex, Icon, Link, Text } from '@chakra-ui/react'
 import { LiaTelegramPlane,LiaInstagram  } from "react-icons/lia";
 import "@fontsource/protest-guerrilla"
 
-let Footer=()=>{
+let Footer=({ onContactClick })=>{
     const colores_f={
         fondo:"#0c0c0c",
         texto:"#d1d1d0"
@@ -30,7 +30,7 @@ let Footer=()=>{
                 <Flex as={"p"}
                 fontSize={{base:15,md:16}}
                 flexDirection={{base:"column",sm:"row",md:"column"}}>
-                    <Text fontFamily={logo}
+                	<Text fontFamily={logo}
                     fontSize={{base:30,md:40,lg:50}}
                     >IB
                     </Text>
@@ -49,11 +49,27 @@ let Footer=()=>{
                 <Text as={"h1"}
                 fontWeight='bold'
                 fontSize={{base:22,lg:32}}
+                cursor="pointer"
+                _hover={{ color: "white" }}
+                onClick={(e) => {
+                    e.preventDefault();
+                    if (onContactClick) onContactClick();
+                }}
                 >
                 Contacto
                 </Text>
                 <Text>Direccion: Argentina</Text>
-                <Text>Mail:bogadoivan52@gmail.com</Text>
+                <Text>Mail: bogadoivan52@gmail.com</Text>
+                <Text 
+                  cursor="pointer" 
+                  color="#a7734a" 
+                  fontWeight="semibold"
+                  _hover={{ color: "white", textDecoration: "underline" }} 
+                  onClick={onContactClick}
+                  my={1}
+                >
+                  Enviar mensaje
+                </Text>
                 <Flex
                 justifyContent={{base:"center",lg:"flex-end"}}
                 flexDirection={{base:"column",sd:"row"}}>

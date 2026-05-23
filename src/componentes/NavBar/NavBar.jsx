@@ -2,7 +2,7 @@ import { Center, Flex,Link, textDecoration } from "@chakra-ui/react"
 
 
 
-function NavBar() {
+function NavBar({ onContactClick }) {
     return(
         <Flex
         as="nav" 
@@ -68,6 +68,10 @@ function NavBar() {
                 Servicios
             </Link>
             <Link href="#a_contacto"
+            onClick={(e) => {
+                e.preventDefault()
+                if (onContactClick) onContactClick()
+            }}
             mr={{base:0}}
             position={"relative"} 
             _hover={{_after:{ 

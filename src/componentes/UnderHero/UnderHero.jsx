@@ -1,6 +1,6 @@
 import { Box, Flex, Link, Text} from '@chakra-ui/react'
 
-let UnderHero=()=>{
+let UnderHero=({ onContactClick })=>{
     return(
         <Flex
         pt={{base:4,md:12,lg:20}}
@@ -8,7 +8,11 @@ let UnderHero=()=>{
         textAlign={{base:"center"}}
         
         >
-            <Box pr={{base:2,md:8,lg:10}}
+            <Box 
+            pr={{base:2,md:8,lg:10}}
+            cursor="pointer"
+            onClick={onContactClick}
+            _hover={{ color: "white" }}
             >
                 <Text as={"h1"}
                     fontWeight='bold'
@@ -16,6 +20,7 @@ let UnderHero=()=>{
                     >Contacto</Text>
                 <Text
                 fontSize={{base:15, lg:18}}
+                _hover={{ textDecoration: "underline" }}
                 >bogadoivan52@gmail.com</Text>
             </Box>
             <Box>
